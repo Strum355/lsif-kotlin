@@ -180,7 +180,7 @@ subprojects {
 
     dependencies {
         implementation(kotlin("stdlib"))
-        compileOnly("com.sourcegraph", "semanticdb-javac", "0.6.12")
+        compileOnly("com.sourcegraph", "semanticdb-javac", "0.10.3")
     }
 
     afterEvaluate {
