@@ -15,13 +15,13 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.google.protobuf:protobuf-java:3.17.3")
+        classpath("com.google.protobuf:protobuf-java:3.25.6")
     }
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.google.protobuf:protobuf-java:3.17.3")
+    implementation("com.google.protobuf:protobuf-java:3.25.6")
     compileOnly("com.sourcegraph", "semanticdb-javac", "0.8.23")
 }
 
@@ -47,7 +47,7 @@ afterEvaluate {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:3.17.3"
+        artifact = "com.google.protobuf:protoc:3.25.6"
     }
 
     generatedFilesBaseDir = kotlin.sourceSets.main.get().kotlin.srcDirs.first().path.split(":")[0].removeSuffix("main/kotlin")
